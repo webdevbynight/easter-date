@@ -1,0 +1,47 @@
+/* Quick reset */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* General layout */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: grid;
+    justify-content: center;
+    min-height: 100dvh;
+}
+h1, p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+h1 {
+    margin-block: 1rem;
+}
+form {
+    margin-block: 1rem;
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+input {
+    font-size: inherit;
+    border: 1px solid;
+    &[type="number"] {
+        width: 6ch;
+    }
+    &[type="submit"] {
+        background: #fefefe;
+        padding-inline: .5rem;
+    }
+}
+label {
+    flex: 1;
+}
